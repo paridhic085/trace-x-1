@@ -1,0 +1,9 @@
+transaction_id,timestamp,sender_upi,receiver_upi,amount,bank_reference
+TXN001,2026-09-19 10:00:00,victim@upi,mule01@upi,50000,BR001
+TXN002,2026-09-19 10:02:00,mule01@upi,mule02@upi,48000,BR002
+TXN003,2026-09-19 10:05:00,mule02@upi,mule03@upi,45000,BR003
+TXN004,2026-09-19 10:20:00,mule03@upi,final01@upi,42000,BR004
+TXN005,2026-09-19 11:00:00,victim2@upi,mule01@upi,30000,BR005
+TXN006,2026-09-19 11:02:00,mule01@upi,mule02@upi,29000,BR006
+TXN007,2026-09-19 11:06:00,mule02@upi,mule03@upi,27000,BR007
+TXN008,2026-09-19 12:30:00,normal01@upi,normal02@upi,1200,BR008

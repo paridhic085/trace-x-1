@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ALERT_001",
+    "type": "RAPID_ONWARD_TRANSFER",
+    "entity": "UPI_001",
+    "severity": "high",
+    "reason": "\u20b950,000 received and \u20b948,000 transferred within 120 seconds",
+    "evidence": [
+      "transactions.csv:1",
+      "transactions.csv:2"
+    ]
+  },
+  {
+    "id": "ALERT_002",
+    "type": "RAPID_ONWARD_TRANSFER",
+    "entity": "UPI_002",
+    "severity": "high",
+    "reason": "\u20b948,000 received and \u20b945,000 transferred within 180 seconds",
+    "evidence": [
+      "transactions.csv:2",
+      "transactions.csv:3"
+    ]
+  },
+  {
+    "id": "ALERT_003",
+    "type": "RAPID_ONWARD_TRANSFER",
+    "entity": "UPI_003",
+    "severity": "high",
+    "reason": "\u20b945,000 received and \u20b940,000 transferred within 300 seconds",
+    "evidence": [
+      "transactions.csv:3",
+      "transactions.csv:4"
+    ]
+  },
+  {
+    "id": "ALERT_004",
+    "type": "SHARED_DEVICE",
+    "entity": "IMEI_001",
+    "severity": "medium",
+    "reason": "IMEI_001 is associated with multiple phones: PHONE_001, PHONE_002",
+    "evidence": [
+      "devices.csv:2",
+      "devices.csv:3"
+    ]
+  },
+  {
+    "id": "ALERT_005",
+    "type": "HIGH_TRANSACTION_VELOCITY",
+    "entity": "UPI_003",
+    "severity": "medium",
+    "reason": "3 transactions involving UPI_003 within 600 seconds",
+    "evidence": [
+      "transactions.csv:3",
+      "transactions.csv:4",
+      "transactions.csv:5"
+    ]
+  }
+]

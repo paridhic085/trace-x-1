@@ -1,0 +1,32 @@
+[
+  {
+    "cdr_id": "CDR001",
+    "timestamp": "2026-09-19T09:45:00",
+    "caller": "9876543210",
+    "callee": "9123456780",
+    "duration_seconds": 125,
+    "imei": "356789012345678",
+    "imsi": "404450123456789",
+    "cell_id": "CELL_BPL_001"
+  },
+  {
+    "cdr_id": "CDR002",
+    "timestamp": "2026-09-19T09:50:00",
+    "caller": "9123456780",
+    "callee": "9988776655",
+    "duration_seconds": 87,
+    "imei": "356789012345678",
+    "imsi": "404450123456789",
+    "cell_id": "CELL_BPL_001"
+  },
+  {
+    "cdr_id": "CDR003",
+    "timestamp": "2026-09-19T10:10:00",
+    "caller": "9988776655",
+    "callee": "9001122334",
+    "duration_seconds": 64,
+    "imei": "352099001761481",
+    "imsi": "404450987654321",
+    "cell_id": "CELL_BPL_002"
+  }
+]

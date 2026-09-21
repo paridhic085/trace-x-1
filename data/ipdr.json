@@ -1,0 +1,38 @@
+[
+  {
+    "ipdr_id": "IPDR001",
+    "timestamp": "2026-09-19T09:40:00",
+    "phone_number": "9876543210",
+    "imei": "356789012345678",
+    "source_ip": "103.25.45.10",
+    "destination_ip": "185.199.108.153",
+    "source_port": 52341,
+    "destination_port": 443,
+    "protocol": "HTTPS",
+    "session_duration_seconds": 320
+  },
+  {
+    "ipdr_id": "IPDR002",
+    "timestamp": "2026-09-19T09:55:00",
+    "phone_number": "9123456780",
+    "imei": "356789012345678",
+    "source_ip": "103.25.45.10",
+    "destination_ip": "142.250.183.14",
+    "source_port": 52412,
+    "destination_port": 443,
+    "protocol": "HTTPS",
+    "session_duration_seconds": 180
+  },
+  {
+    "ipdr_id": "IPDR003",
+    "timestamp": "2026-09-19T10:12:00",
+    "phone_number": "9988776655",
+    "imei": "352099001761481",
+    "source_ip": "117.201.22.45",
+    "destination_ip": "172.217.160.78",
+    "source_port": 50122,
+    "destination_port": 443,
+    "protocol": "HTTPS",
+    "session_duration_seconds": 240
+  }
+]

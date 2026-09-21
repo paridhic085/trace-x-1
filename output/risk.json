@@ -1,0 +1,134 @@
+[
+  {
+    "entity": "UPI_003",
+    "risk_score": 62.72,
+    "risk_level": "MEDIUM",
+    "rule_based_score": 50,
+    "ml_anomaly_score": 0.6358,
+    "ml_risk_points": 12.72,
+    "ml_anomaly": true,
+    "alert_count": 2,
+    "alert_types": [
+      "RAPID_ONWARD_TRANSFER",
+      "HIGH_TRANSACTION_VELOCITY"
+    ],
+    "evidence": [
+      "transactions.csv:3",
+      "transactions.csv:4",
+      "transactions.csv:3",
+      "transactions.csv:4",
+      "transactions.csv:5"
+    ]
+  },
+  {
+    "entity": "UPI_001",
+    "risk_score": 39.8,
+    "risk_level": "LOW",
+    "rule_based_score": 30,
+    "ml_anomaly_score": 0.49,
+    "ml_risk_points": 9.8,
+    "ml_anomaly": false,
+    "alert_count": 1,
+    "alert_types": [
+      "RAPID_ONWARD_TRANSFER"
+    ],
+    "evidence": [
+      "transactions.csv:1",
+      "transactions.csv:2"
+    ]
+  },
+  {
+    "entity": "UPI_002",
+    "risk_score": 39.74,
+    "risk_level": "LOW",
+    "rule_based_score": 30,
+    "ml_anomaly_score": 0.4872,
+    "ml_risk_points": 9.74,
+    "ml_anomaly": false,
+    "alert_count": 1,
+    "alert_types": [
+      "RAPID_ONWARD_TRANSFER"
+    ],
+    "evidence": [
+      "transactions.csv:2",
+      "transactions.csv:3"
+    ]
+  },
+  {
+    "entity": "IMEI_001",
+    "risk_score": 24.83,
+    "risk_level": "LOW",
+    "rule_based_score": 15,
+    "ml_anomaly_score": 0.4916,
+    "ml_risk_points": 9.83,
+    "ml_anomaly": false,
+    "alert_count": 1,
+    "alert_types": [
+      "SHARED_DEVICE"
+    ],
+    "evidence": [
+      "devices.csv:2",
+      "devices.csv:3"
+    ]
+  },
+  {
+    "entity": "VICTIM_001",
+    "risk_score": 11.48,
+    "risk_level": "LOW",
+    "rule_based_score": 0,
+    "ml_anomaly_score": 0.5741,
+    "ml_risk_points": 11.48,
+    "ml_anomaly": true,
+    "alert_count": 0,
+    "alert_types": [],
+    "evidence": []
+  },
+  {
+    "entity": "PHONE_002",
+    "risk_score": 9.83,
+    "risk_level": "LOW",
+    "rule_based_score": 0,
+    "ml_anomaly_score": 0.4916,
+    "ml_risk_points": 9.83,
+    "ml_anomaly": false,
+    "alert_count": 0,
+    "alert_types": [],
+    "evidence": []
+  },
+  {
+    "entity": "PHONE_001",
+    "risk_score": 9.83,
+    "risk_level": "LOW",
+    "rule_based_score": 0,
+    "ml_anomaly_score": 0.4916,
+    "ml_risk_points": 9.83,
+    "ml_anomaly": false,
+    "alert_count": 0,
+    "alert_types": [],
+    "evidence": []
+  },
+  {
+    "entity": "UPI_004",
+    "risk_score": 9.75,
+    "risk_level": "LOW",
+    "rule_based_score": 0,
+    "ml_anomaly_score": 0.4873,
+    "ml_risk_points": 9.75,
+    "ml_anomaly": false,
+    "alert_count": 0,
+    "alert_types": [],
+    "evidence": []
+  },
+  {
+    "entity": "BANK_001",
+    "risk_score": 9.73,
+    "risk_level": "LOW",
+    "rule_based_score": 0,
+    "ml_anomaly_score": 0.4864,
+    "ml_risk_points": 9.73,
+    "ml_anomaly": false,
+    "alert_count": 0,
+    "alert_types": [],
+    "evidence": []
+  }
+]

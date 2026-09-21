@@ -1,0 +1,34 @@
+[
+  {
+    "transaction_id": "TXN001",
+    "timestamp": "2026-09-19T10:00:00",
+    "sender_upi": "victim@upi",
+    "receiver_upi": "mule01@upi",
+    "amount": 50000,
+    "bank_reference": "BR001"
+  },
+  {
+    "transaction_id": "TXN002",
+    "timestamp": "2026-09-19T10:02:00",
+    "sender_upi": "mule01@upi",
+    "receiver_upi": "mule02@upi",
+    "amount": 48000,
+    "bank_reference": "BR002"
+  },
+  {
+    "transaction_id": "TXN003",
+    "timestamp": "2026-09-19T10:05:00",
+    "sender_upi": "mule02@upi",
+    "receiver_upi": "mule03@upi",
+    "amount": 45000,
+    "bank_reference": "BR003"
+  },
+  {
+    "transaction_id": "TXN004",
+    "timestamp": "2026-09-19T10:20:00",
+    "sender_upi": "mule03@upi",
+    "receiver_upi": "final01@upi",
+    "amount": 42000,
+    "bank_reference": "BR004"
+  }
+]

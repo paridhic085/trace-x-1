@@ -1,0 +1,70 @@
+[
+  {
+    "source": "VICTIM_001",
+    "target": "UPI_001",
+    "type": "TRANSFERRED",
+    "amount": 50000,
+    "timestamp": "2026-09-19 10:10:00",
+    "evidence": "transactions.csv:1"
+  },
+  {
+    "source": "UPI_001",
+    "target": "UPI_002",
+    "type": "TRANSFERRED",
+    "amount": 48000,
+    "timestamp": "2026-09-19 10:12:00",
+    "evidence": "transactions.csv:2"
+  },
+  {
+    "source": "UPI_002",
+    "target": "UPI_003",
+    "type": "TRANSFERRED",
+    "amount": 45000,
+    "timestamp": "2026-09-19 10:15:00",
+    "evidence": "transactions.csv:3"
+  },
+  {
+    "source": "UPI_003",
+    "target": "BANK_001",
+    "type": "TRANSFERRED",
+    "amount": 40000,
+    "timestamp": "2026-09-19 10:20:00",
+    "evidence": "transactions.csv:4"
+  },
+  {
+    "source": "PHONE_001",
+    "target": "IMEI_001",
+    "type": "USES",
+    "timestamp": "2026-09-19 10:01:00",
+    "evidence": "devices.csv:2"
+  },
+  {
+    "source": "PHONE_002",
+    "target": "IMEI_001",
+    "type": "USES",
+    "timestamp": "2026-09-19 10:06:00",
+    "evidence": "devices.csv:3"
+  },
+  {
+    "source": "PHONE_002",
+    "target": "UPI_002",
+    "type": "LINKED_TO",
+    "timestamp": "2026-09-19 10:07:00",
+    "evidence": "kyc.csv:5"
+  },
+  {
+    "source": "PHONE_001",
+    "target": "UPI_001",
+    "type": "LINKED_TO",
+    "timestamp": "2026-09-19 10:02:00",
+    "evidence": "kyc.csv:4"
+  },
+  {
+    "source": "UPI_003",
+    "target": "UPI_004",
+    "type": "TRANSFERRED",
+    "amount": 39000,
+    "timestamp": "2026-09-19 10:25:00",
+    "evidence": "transactions.csv:5"
+  }
+]

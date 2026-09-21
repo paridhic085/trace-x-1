@@ -1,0 +1,101 @@
+[
+  {
+    "entity": "UPI_003",
+    "anomaly_score": 0.6358,
+    "features": {
+      "transaction_count": 3,
+      "total_amount": 124000.0,
+      "outgoing_count": 2,
+      "incoming_count": 1
+    },
+    "anomaly": true
+  },
+  {
+    "entity": "VICTIM_001",
+    "anomaly_score": 0.5741,
+    "features": {
+      "transaction_count": 1,
+      "total_amount": 50000.0,
+      "outgoing_count": 1,
+      "incoming_count": 0
+    },
+    "anomaly": true
+  },
+  {
+    "entity": "PHONE_001",
+    "anomaly_score": 0.4916,
+    "features": {
+      "transaction_count": 0,
+      "total_amount": 0.0,
+      "outgoing_count": 0,
+      "incoming_count": 0
+    },
+    "anomaly": false
+  },
+  {
+    "entity": "IMEI_001",
+    "anomaly_score": 0.4916,
+    "features": {
+      "transaction_count": 0,
+      "total_amount": 0.0,
+      "outgoing_count": 0,
+      "incoming_count": 0
+    },
+    "anomaly": false
+  },
+  {
+    "entity": "PHONE_002",
+    "anomaly_score": 0.4916,
+    "features": {
+      "transaction_count": 0,
+      "total_amount": 0.0,
+      "outgoing_count": 0,
+      "incoming_count": 0
+    },
+    "anomaly": false
+  },
+  {
+    "entity": "UPI_001",
+    "anomaly_score": 0.49,
+    "features": {
+      "transaction_count": 2,
+      "total_amount": 98000.0,
+      "outgoing_count": 1,
+      "incoming_count": 1
+    },
+    "anomaly": false
+  },
+  {
+    "entity": "UPI_004",
+    "anomaly_score": 0.4873,
+    "features": {
+      "transaction_count": 1,
+      "total_amount": 39000.0,
+      "outgoing_count": 0,
+      "incoming_count": 1
+    },
+    "anomaly": false
+  },
+  {
+    "entity": "UPI_002",
+    "anomaly_score": 0.4872,
+    "features": {
+      "transaction_count": 2,
+      "total_amount": 93000.0,
+      "outgoing_count": 1,
+      "incoming_count": 1
+    },
+    "anomaly": false
+  },
+  {
+    "entity": "BANK_001",
+    "anomaly_score": 0.4864,
+    "features": {
+      "transaction_count": 1,
+      "total_amount": 40000.0,
+      "outgoing_count": 0,
+      "incoming_count": 1
+    },
+    "anomaly": false
+  }
+]
