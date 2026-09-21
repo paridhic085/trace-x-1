@@ -1716,6 +1716,46 @@ hr {
         transform: translateX(8%);
     }
 }
+.trace-case-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin: 18px 0 24px 0;
+}
+
+.trace-case-card {
+    background: linear-gradient(
+        145deg,
+        rgba(18, 25, 34, 0.92),
+        rgba(12, 17, 25, 0.92)
+    );
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 16px 18px;
+    min-height: 68px;
+    transition: all 0.2s ease;
+}
+
+.trace-case-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(74, 214, 164, 0.28);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+}
+
+.trace-case-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: #6f7d8f;
+    margin-bottom: 7px;
+}
+
+.trace-case-value {
+    font-size: 15px;
+    font-weight: 600;
+    color: #e8edf3;
+    letter-spacing: 0.02em;
+}
 </style>
         """,
         unsafe_allow_html=True,

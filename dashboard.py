@@ -130,8 +130,8 @@ def generate_investigation_report(
     evidence_data = [
         ["Evidence Type", "Records"],
         ["Financial / UPI", str(len(transactions_df))],
-        ["CDR", "3"],
-        ["IPDR", "3"],
+        ["CDR", str(len(cdr_df))],
+        ["IPDR", str(len(ipdr_df))],
         ["Entity Relationships", str(len(entity_links))]
     ]
 
@@ -732,18 +732,7 @@ else:
 # HEADER
 # ============================================================
 
-st.title("🔎 TRACE-X")
 
-st.subheader(
-    "Unified Cyber Fraud Analysis & Investigation Platform"
-)
-
-st.caption(
-    "Evidence-driven analysis, entity correlation, network visualization "
-    "and investigative reporting."
-)
-
-st.divider()
 
 # ============================================================
 # SIDEBAR
@@ -762,7 +751,7 @@ with st.sidebar:
 
     investigator = st.text_input(
         "Investigator",
-        value="Demo Investigator"
+        value="Digital Forensics Analyst"
     )
 
     st.selectbox(
@@ -815,15 +804,15 @@ st.header("Investigation Overview")
 case_col1, case_col2, case_col3 = st.columns(3)
 
 with case_col1:
-    st.markdown("**Case ID**")
+    st.write("**Case ID**")
     st.write(case_id)
 
 with case_col2:
-    st.markdown("**Investigator**")
+    st.write("**Investigator**")
     st.write(investigator)
 
 with case_col3:
-    st.markdown("**Analysis Mode**")
+    st.write("**Analysis Mode**")
     st.write("Evidence-driven")
 
 st.divider()
@@ -942,38 +931,6 @@ if investigation_module == "Overview":
     unsafe_allow_html=True
 )
 
-# --- LIVE METRICS ---
-
-metric_cols = st.columns(4)
-
-with metric_cols[0]:
-    st.metric(
-        "EVIDENCE FILES",
-        evidence_files
-    )
-
-with metric_cols[1]:
-    st.metric(
-        "LINKED ENTITIES",
-        len(set(
-            [x["source_entity"] for x in entity_links] +
-            [x["target_entity"] for x in entity_links]
-        ))
-    )
-
-with metric_cols[2]:
-    st.metric(
-        "RELATIONSHIPS",
-        len(entity_links)
-    )
-
-with metric_cols[3]:
-    st.metric(
-        "RISK ALERTS",
-        len(risk_alerts)
-    )
-
-    st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
     # =========================================================
 # TRACE-X RISK ANALYZER
 # =========================================================
@@ -1129,11 +1086,6 @@ with source_col3:
         len(ipdr_df)
     )
 
-st.info(
-    "No evidence has been analyzed yet. "
-    "The next stage will connect the mock CDR, IPDR, "
-    "device and financial datasets."
-)
 
 # ============================================================
 # NETWORK TAB
