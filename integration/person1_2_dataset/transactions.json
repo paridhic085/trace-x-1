@@ -1,0 +1,26 @@
+[
+  {
+    "txn_id": "TXN1001",
+    "sender_upi": "fraud1@YBL",
+    "receiver_upi": "victim@SBI",
+    "amount": 50000.00,
+    "timestamp": "25-Oct-2023 18:15:22",
+    "status": "SUCCESS"
+  },
+  {
+    "txn_id": "TXN1002",
+    "sender_upi": "fraud2@ICICI",
+    "receiver_upi": "victim@SBI",
+    "amount": 75000.00,
+    "timestamp": "25-Oct-2023 18:55:10",
+    "status": "SUCCESS"
+  },
+  {
+    "txn_id": "TXN1003",
+    "sender_upi": "victim@SBI",
+    "receiver_upi": "safe_account@HDFC",
+    "amount": 10.00,
+    "timestamp": "25-Oct-2023 19:05:00",
+    "status": "FAILED"
+  }
+]

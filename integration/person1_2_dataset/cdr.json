@@ -1,0 +1,23 @@
+[
+  {
+    "caller_msisdn": "9876543210",
+    "callee_msisdn": "9999900000",
+    "call_time": "10/25/2023 18:05:00",
+    "duration_sec": 120,
+    "cell_tower_id": "TWR-IND-101"
+  },
+  {
+    "caller_msisdn": "8765432109",
+    "callee_msisdn": "9999900000",
+    "call_time": "10/25/2023 18:45:00",
+    "duration_sec": 45,
+    "cell_tower_id": "TWR-IND-101"
+  },
+  {
+    "caller_msisdn": "9999900000",
+    "callee_msisdn": "9876543210",
+    "call_time": "10/25/2023 19:00:00",
+    "duration_sec": 300,
+    "cell_tower_id": "TWR-IND-105"
+  }
+]
