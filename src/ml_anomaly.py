@@ -6,6 +6,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 INPUT_FILE = BASE_DIR / "data" / "sample.json"
+MULTISOURCE_INPUT_FILE = BASE_DIR / "output" / "multisource_relationships.json"
 OUTPUT_DIR = BASE_DIR / "output"
 OUTPUT_FILE = OUTPUT_DIR / "ml_anomalies.json"
 
@@ -13,7 +14,13 @@ OUTPUT_FILE = OUTPUT_DIR / "ml_anomalies.json"
 
 
 def load_relationships():
-    with open(INPUT_FILE, "r", encoding="utf-8") as file:
+    input_file = (
+        MULTISOURCE_INPUT_FILE
+        if MULTISOURCE_INPUT_FILE.exists()
+        else INPUT_FILE
+    )
+
+    with open(input_file, "r", encoding="utf-8") as file:
         return json.load(file)
 
 
@@ -39,7 +46,7 @@ def build_features(relationships):
                     "incoming_count": 0,
                 }
 
-        if relation.get("type") == "TRANSFERRED":
+        if relation.get("type") == "TRANSFERRED_TO":
             amount = relation.get("amount") or 0
 
             entities[source]["transaction_count"] += 1

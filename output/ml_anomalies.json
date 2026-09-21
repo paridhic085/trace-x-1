@@ -1,18 +1,29 @@
 [
   {
-    "entity": "UPI_003",
-    "anomaly_score": 0.6358,
+    "entity": "UPI_victim@sbi",
+    "anomaly_score": 0.7678,
     "features": {
-      "transaction_count": 3,
-      "total_amount": 124000.0,
-      "outgoing_count": 2,
-      "incoming_count": 1
+      "transaction_count": 2,
+      "total_amount": 125000.0,
+      "outgoing_count": 0,
+      "incoming_count": 2
     },
     "anomaly": true
   },
   {
-    "entity": "VICTIM_001",
-    "anomaly_score": 0.5741,
+    "entity": "UPI_fraud2@icici",
+    "anomaly_score": 0.6296,
+    "features": {
+      "transaction_count": 1,
+      "total_amount": 75000.0,
+      "outgoing_count": 1,
+      "incoming_count": 0
+    },
+    "anomaly": true
+  },
+  {
+    "entity": "UPI_fraud1@ybl",
+    "anomaly_score": 0.6226,
     "features": {
       "transaction_count": 1,
       "total_amount": 50000.0,
@@ -22,8 +33,8 @@
     "anomaly": true
   },
   {
-    "entity": "PHONE_001",
-    "anomaly_score": 0.4916,
+    "entity": "PHONE_9876543210",
+    "anomaly_score": 0.4128,
     "features": {
       "transaction_count": 0,
       "total_amount": 0.0,
@@ -33,8 +44,8 @@
     "anomaly": false
   },
   {
-    "entity": "IMEI_001",
-    "anomaly_score": 0.4916,
+    "entity": "IMEI_354123456789012",
+    "anomaly_score": 0.4128,
     "features": {
       "transaction_count": 0,
       "total_amount": 0.0,
@@ -44,8 +55,8 @@
     "anomaly": false
   },
   {
-    "entity": "PHONE_002",
-    "anomaly_score": 0.4916,
+    "entity": "IMSI_404123456789012",
+    "anomaly_score": 0.4128,
     "features": {
       "transaction_count": 0,
       "total_amount": 0.0,
@@ -55,46 +66,79 @@
     "anomaly": false
   },
   {
-    "entity": "UPI_001",
-    "anomaly_score": 0.49,
+    "entity": "PHONE_8765432109",
+    "anomaly_score": 0.4128,
     "features": {
-      "transaction_count": 2,
-      "total_amount": 98000.0,
-      "outgoing_count": 1,
-      "incoming_count": 1
-    },
-    "anomaly": false
-  },
-  {
-    "entity": "UPI_004",
-    "anomaly_score": 0.4873,
-    "features": {
-      "transaction_count": 1,
-      "total_amount": 39000.0,
+      "transaction_count": 0,
+      "total_amount": 0.0,
       "outgoing_count": 0,
-      "incoming_count": 1
+      "incoming_count": 0
     },
     "anomaly": false
   },
   {
-    "entity": "UPI_002",
-    "anomaly_score": 0.4872,
+    "entity": "IMSI_404987654321098",
+    "anomaly_score": 0.4128,
     "features": {
-      "transaction_count": 2,
-      "total_amount": 93000.0,
-      "outgoing_count": 1,
-      "incoming_count": 1
-    },
-    "anomaly": false
-  },
-  {
-    "entity": "BANK_001",
-    "anomaly_score": 0.4864,
-    "features": {
-      "transaction_count": 1,
-      "total_amount": 40000.0,
+      "transaction_count": 0,
+      "total_amount": 0.0,
       "outgoing_count": 0,
-      "incoming_count": 1
+      "incoming_count": 0
+    },
+    "anomaly": false
+  },
+  {
+    "entity": "PHONE_9999900000",
+    "anomaly_score": 0.4128,
+    "features": {
+      "transaction_count": 0,
+      "total_amount": 0.0,
+      "outgoing_count": 0,
+      "incoming_count": 0
+    },
+    "anomaly": false
+  },
+  {
+    "entity": "IMEI_865432049876543",
+    "anomaly_score": 0.4128,
+    "features": {
+      "transaction_count": 0,
+      "total_amount": 0.0,
+      "outgoing_count": 0,
+      "incoming_count": 0
+    },
+    "anomaly": false
+  },
+  {
+    "entity": "IMSI_405000000000000",
+    "anomaly_score": 0.4128,
+    "features": {
+      "transaction_count": 0,
+      "total_amount": 0.0,
+      "outgoing_count": 0,
+      "incoming_count": 0
+    },
+    "anomaly": false
+  },
+  {
+    "entity": "IP_103.10.10.21",
+    "anomaly_score": 0.4128,
+    "features": {
+      "transaction_count": 0,
+      "total_amount": 0.0,
+      "outgoing_count": 0,
+      "incoming_count": 0
+    },
+    "anomaly": false
+  },
+  {
+    "entity": "IP_103.10.10.22",
+    "anomaly_score": 0.4128,
+    "features": {
+      "transaction_count": 0,
+      "total_amount": 0.0,
+      "outgoing_count": 0,
+      "incoming_count": 0
     },
     "anomaly": false
   }

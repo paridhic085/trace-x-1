@@ -4,17 +4,25 @@ from datetime import datetime
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 INPUT_FILE = BASE_DIR / "data" / "sample.json"
+MULTISOURCE_INPUT_FILE = BASE_DIR / "output" / "multisource_relationships.json"
 OUTPUT_DIR = BASE_DIR / "output"
 OUTPUT_FILE = OUTPUT_DIR / "alerts.json"
 
 
 def load_relationships():
-    with open(INPUT_FILE, "r", encoding="utf-8") as file:
+    """Load integrated relationships when available."""
+    input_file = (
+        MULTISOURCE_INPUT_FILE
+        if MULTISOURCE_INPUT_FILE.exists()
+        else INPUT_FILE
+    )
+
+    with open(input_file, "r", encoding="utf-8") as file:
         return json.load(file)
 
 
 def parse_timestamp(timestamp):
-    return datetime.strptime(timestamp, "%Y-%m-%d %H:%M:%S")
+    return datetime.fromisoformat(timestamp)
 
 
 def detect_rapid_onward_transfers(relationships):
@@ -22,7 +30,7 @@ def detect_rapid_onward_transfers(relationships):
 
     transfers = [
         r for r in relationships
-        if r.get("type") == "TRANSFERRED"
+        if r.get("type") == "TRANSFERRED_TO"
     ]
 
     for incoming in transfers:
@@ -61,7 +69,7 @@ def detect_shared_devices(relationships, start_id=1):
     device_users = {}
 
     for relation in relationships:
-        if relation.get("type") != "USES":
+        if relation.get("type") != "USES_IMEI":
             continue
 
         phone = relation["source"]
@@ -87,7 +95,7 @@ def detect_shared_devices(relationships, start_id=1):
                 "evidence": [
                     relation.get("evidence")
                     for relation in relationships
-                    if relation.get("type") == "USES"
+                    if relation.get("type") == "USES_IMEI"
                     and relation.get("target") == imei
                 ]
             })
@@ -100,7 +108,7 @@ def detect_high_transaction_velocity(relationships, start_id=1):
 
     transfers = [
         r for r in relationships
-        if r.get("type") == "TRANSFERRED"
+        if r.get("type") == "TRANSFERRED_TO"
     ]
 
     entities = set()
@@ -153,7 +161,7 @@ def detect_repeated_beneficiary(relationships, start_id=1):
 
     transfers = [
         r for r in relationships
-        if r.get("type") == "TRANSFERRED"
+        if r.get("type") == "TRANSFERRED_TO"
     ]
 
     destination_counts = {}

@@ -1,74 +1,114 @@
 [
   {
-    "timestamp": "2026-09-19 10:01:00",
-    "event_type": "USES",
-    "source": "PHONE_001",
-    "target": "IMEI_001",
+    "timestamp": "2023-01-10T09:15:00",
+    "event_type": "USES_IMEI",
+    "source": "PHONE_9999900000",
+    "target": "IMEI_865432049876543",
     "amount": null,
-    "evidence": "devices.csv:2"
+    "evidence": "devices.json:3"
   },
   {
-    "timestamp": "2026-09-19 10:02:00",
-    "event_type": "LINKED_TO",
-    "source": "PHONE_001",
-    "target": "UPI_001",
+    "timestamp": "2023-01-10T09:15:00",
+    "event_type": "USES_IMSI",
+    "source": "PHONE_9999900000",
+    "target": "IMSI_405000000000000",
     "amount": null,
-    "evidence": "kyc.csv:4"
+    "evidence": "devices.json:3"
   },
   {
-    "timestamp": "2026-09-19 10:06:00",
-    "event_type": "USES",
-    "source": "PHONE_002",
-    "target": "IMEI_001",
+    "timestamp": "2023-10-01T10:00:00",
+    "event_type": "USES_IMEI",
+    "source": "PHONE_9876543210",
+    "target": "IMEI_354123456789012",
     "amount": null,
-    "evidence": "devices.csv:3"
+    "evidence": "devices.json:1"
   },
   {
-    "timestamp": "2026-09-19 10:07:00",
-    "event_type": "LINKED_TO",
-    "source": "PHONE_002",
-    "target": "UPI_002",
+    "timestamp": "2023-10-01T10:00:00",
+    "event_type": "USES_IMSI",
+    "source": "PHONE_9876543210",
+    "target": "IMSI_404123456789012",
     "amount": null,
-    "evidence": "kyc.csv:5"
+    "evidence": "devices.json:1"
   },
   {
-    "timestamp": "2026-09-19 10:10:00",
-    "event_type": "TRANSFERRED",
-    "source": "VICTIM_001",
-    "target": "UPI_001",
-    "amount": 50000,
-    "evidence": "transactions.csv:1"
+    "timestamp": "2023-10-15T14:30:00",
+    "event_type": "USES_IMEI",
+    "source": "PHONE_8765432109",
+    "target": "IMEI_354123456789012",
+    "amount": null,
+    "evidence": "devices.json:2"
   },
   {
-    "timestamp": "2026-09-19 10:12:00",
-    "event_type": "TRANSFERRED",
-    "source": "UPI_001",
-    "target": "UPI_002",
-    "amount": 48000,
-    "evidence": "transactions.csv:2"
+    "timestamp": "2023-10-15T14:30:00",
+    "event_type": "USES_IMSI",
+    "source": "PHONE_8765432109",
+    "target": "IMSI_404987654321098",
+    "amount": null,
+    "evidence": "devices.json:2"
   },
   {
-    "timestamp": "2026-09-19 10:15:00",
-    "event_type": "TRANSFERRED",
-    "source": "UPI_002",
-    "target": "UPI_003",
-    "amount": 45000,
-    "evidence": "transactions.csv:3"
+    "timestamp": "2023-10-25T18:00:00",
+    "event_type": "CONNECTED_TO_IP",
+    "source": "PHONE_9876543210",
+    "target": "IP_103.10.10.21",
+    "amount": null,
+    "evidence": "ipdr.json:1"
   },
   {
-    "timestamp": "2026-09-19 10:20:00",
-    "event_type": "TRANSFERRED",
-    "source": "UPI_003",
-    "target": "BANK_001",
-    "amount": 40000,
-    "evidence": "transactions.csv:4"
+    "timestamp": "2023-10-25T18:05:00",
+    "event_type": "CALLED",
+    "source": "PHONE_9876543210",
+    "target": "PHONE_9999900000",
+    "amount": null,
+    "evidence": "cdr.json:1"
   },
   {
-    "timestamp": "2026-09-19 10:25:00",
-    "event_type": "TRANSFERRED",
-    "source": "UPI_003",
-    "target": "UPI_004",
-    "amount": 39000,
-    "evidence": "transactions.csv:5"
+    "timestamp": "2023-10-25T18:15:22",
+    "event_type": "TRANSFERRED_TO",
+    "source": "UPI_fraud1@ybl",
+    "target": "UPI_victim@sbi",
+    "amount": 50000.0,
+    "evidence": "transactions.json:1"
+  },
+  {
+    "timestamp": "2023-10-25T18:30:00",
+    "event_type": "CONNECTED_TO_IP",
+    "source": "PHONE_8765432109",
+    "target": "IP_103.10.10.22",
+    "amount": null,
+    "evidence": "ipdr.json:2"
+  },
+  {
+    "timestamp": "2023-10-25T18:40:00",
+    "event_type": "CONNECTED_TO_IP",
+    "source": "PHONE_9999900000",
+    "target": "IP_103.10.10.21",
+    "amount": null,
+    "evidence": "ipdr.json:3"
+  },
+  {
+    "timestamp": "2023-10-25T18:45:00",
+    "event_type": "CALLED",
+    "source": "PHONE_8765432109",
+    "target": "PHONE_9999900000",
+    "amount": null,
+    "evidence": "cdr.json:2"
+  },
+  {
+    "timestamp": "2023-10-25T18:55:10",
+    "event_type": "TRANSFERRED_TO",
+    "source": "UPI_fraud2@icici",
+    "target": "UPI_victim@sbi",
+    "amount": 75000.0,
+    "evidence": "transactions.json:2"
+  },
+  {
+    "timestamp": "2023-10-25T19:00:00",
+    "event_type": "CALLED",
+    "source": "PHONE_9999900000",
+    "target": "PHONE_9876543210",
+    "amount": null,
+    "evidence": "cdr.json:3"
   }
 ]
