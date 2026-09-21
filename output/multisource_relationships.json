@@ -1,0 +1,115 @@
+[
+  {
+    "source": "PHONE_9876543210",
+    "target": "IMEI_354123456789012",
+    "type": "USES_IMEI",
+    "timestamp": "2023-10-01T10:00:00",
+    "evidence": "devices.json:1"
+  },
+  {
+    "source": "PHONE_9876543210",
+    "target": "IMSI_404123456789012",
+    "type": "USES_IMSI",
+    "timestamp": "2023-10-01T10:00:00",
+    "evidence": "devices.json:1"
+  },
+  {
+    "source": "PHONE_8765432109",
+    "target": "IMEI_354123456789012",
+    "type": "USES_IMEI",
+    "timestamp": "2023-10-15T14:30:00",
+    "evidence": "devices.json:2"
+  },
+  {
+    "source": "PHONE_8765432109",
+    "target": "IMSI_404987654321098",
+    "type": "USES_IMSI",
+    "timestamp": "2023-10-15T14:30:00",
+    "evidence": "devices.json:2"
+  },
+  {
+    "source": "PHONE_9999900000",
+    "target": "IMEI_865432049876543",
+    "type": "USES_IMEI",
+    "timestamp": "2023-01-10T09:15:00",
+    "evidence": "devices.json:3"
+  },
+  {
+    "source": "PHONE_9999900000",
+    "target": "IMSI_405000000000000",
+    "type": "USES_IMSI",
+    "timestamp": "2023-01-10T09:15:00",
+    "evidence": "devices.json:3"
+  },
+  {
+    "source": "PHONE_9876543210",
+    "target": "PHONE_9999900000",
+    "type": "CALLED",
+    "timestamp": "2023-10-25T18:05:00",
+    "evidence": "cdr.json:1",
+    "duration_sec": 120,
+    "cell_tower_id": "TWR-IND-101"
+  },
+  {
+    "source": "PHONE_8765432109",
+    "target": "PHONE_9999900000",
+    "type": "CALLED",
+    "timestamp": "2023-10-25T18:45:00",
+    "evidence": "cdr.json:2",
+    "duration_sec": 45,
+    "cell_tower_id": "TWR-IND-101"
+  },
+  {
+    "source": "PHONE_9999900000",
+    "target": "PHONE_9876543210",
+    "type": "CALLED",
+    "timestamp": "2023-10-25T19:00:00",
+    "evidence": "cdr.json:3",
+    "duration_sec": 300,
+    "cell_tower_id": "TWR-IND-105"
+  },
+  {
+    "source": "PHONE_9876543210",
+    "target": "IP_103.10.10.21",
+    "type": "CONNECTED_TO_IP",
+    "timestamp": "2023-10-25T18:00:00",
+    "evidence": "ipdr.json:1",
+    "session_end": "2023-10-25T18:20:00"
+  },
+  {
+    "source": "PHONE_8765432109",
+    "target": "IP_103.10.10.22",
+    "type": "CONNECTED_TO_IP",
+    "timestamp": "2023-10-25T18:30:00",
+    "evidence": "ipdr.json:2",
+    "session_end": "2023-10-25T18:50:00"
+  },
+  {
+    "source": "PHONE_9999900000",
+    "target": "IP_103.10.10.21",
+    "type": "CONNECTED_TO_IP",
+    "timestamp": "2023-10-25T18:40:00",
+    "evidence": "ipdr.json:3",
+    "session_end": "2023-10-25T19:10:00"
+  },
+  {
+    "source": "UPI_fraud1@ybl",
+    "target": "UPI_victim@sbi",
+    "type": "TRANSFERRED_TO",
+    "amount": 50000.0,
+    "timestamp": "2023-10-25T18:15:22",
+    "evidence": "transactions.json:1",
+    "transaction_id": "TXN1001",
+    "status": "SUCCESS"
+  },
+  {
+    "source": "UPI_fraud2@icici",
+    "target": "UPI_victim@sbi",
+    "type": "TRANSFERRED_TO",
+    "amount": 75000.0,
+    "timestamp": "2023-10-25T18:55:10",
+    "evidence": "transactions.json:2",
+    "transaction_id": "TXN1002",
+    "status": "SUCCESS"
+  }
+]

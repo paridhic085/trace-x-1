@@ -1,114 +1,171 @@
 {
   "nodes": [
     {
-      "id": "VICTIM_001",
-      "type": "VICTIM"
-    },
-    {
-      "id": "UPI_001",
-      "type": "UPI"
-    },
-    {
-      "id": "UPI_002",
-      "type": "UPI"
-    },
-    {
-      "id": "UPI_003",
-      "type": "UPI"
-    },
-    {
-      "id": "BANK_001",
-      "type": "BANK"
-    },
-    {
-      "id": "PHONE_001",
+      "id": "PHONE_9876543210",
       "type": "PHONE"
     },
     {
-      "id": "IMEI_001",
+      "id": "IMEI_354123456789012",
       "type": "IMEI"
     },
     {
-      "id": "PHONE_002",
+      "id": "IMSI_404123456789012",
+      "type": "IMSI"
+    },
+    {
+      "id": "PHONE_8765432109",
       "type": "PHONE"
     },
     {
-      "id": "UPI_004",
+      "id": "IMSI_404987654321098",
+      "type": "IMSI"
+    },
+    {
+      "id": "PHONE_9999900000",
+      "type": "PHONE"
+    },
+    {
+      "id": "IMEI_865432049876543",
+      "type": "IMEI"
+    },
+    {
+      "id": "IMSI_405000000000000",
+      "type": "IMSI"
+    },
+    {
+      "id": "IP_103.10.10.21",
+      "type": "IP"
+    },
+    {
+      "id": "IP_103.10.10.22",
+      "type": "IP"
+    },
+    {
+      "id": "UPI_fraud1@ybl",
+      "type": "UPI"
+    },
+    {
+      "id": "UPI_victim@sbi",
+      "type": "UPI"
+    },
+    {
+      "id": "UPI_fraud2@icici",
       "type": "UPI"
     }
   ],
   "edges": [
     {
-      "source": "VICTIM_001",
-      "target": "UPI_001",
-      "type": "TRANSFERRED",
-      "amount": 50000,
-      "timestamp": "2026-09-19 10:10:00",
-      "evidence": "transactions.csv:1"
+      "source": "PHONE_9876543210",
+      "target": "IMEI_354123456789012",
+      "type": "USES_IMEI",
+      "timestamp": "2023-10-01T10:00:00",
+      "evidence": "devices.json:1"
     },
     {
-      "source": "UPI_001",
-      "target": "UPI_002",
-      "type": "TRANSFERRED",
-      "amount": 48000,
-      "timestamp": "2026-09-19 10:12:00",
-      "evidence": "transactions.csv:2"
+      "source": "PHONE_9876543210",
+      "target": "IMSI_404123456789012",
+      "type": "USES_IMSI",
+      "timestamp": "2023-10-01T10:00:00",
+      "evidence": "devices.json:1"
     },
     {
-      "source": "UPI_002",
-      "target": "UPI_003",
-      "type": "TRANSFERRED",
-      "amount": 45000,
-      "timestamp": "2026-09-19 10:15:00",
-      "evidence": "transactions.csv:3"
+      "source": "PHONE_9876543210",
+      "target": "PHONE_9999900000",
+      "type": "CALLED",
+      "timestamp": "2023-10-25T18:05:00",
+      "evidence": "cdr.json:1",
+      "duration_sec": 120,
+      "cell_tower_id": "TWR-IND-101"
     },
     {
-      "source": "UPI_003",
-      "target": "BANK_001",
-      "type": "TRANSFERRED",
-      "amount": 40000,
-      "timestamp": "2026-09-19 10:20:00",
-      "evidence": "transactions.csv:4"
+      "source": "PHONE_9876543210",
+      "target": "IP_103.10.10.21",
+      "type": "CONNECTED_TO_IP",
+      "timestamp": "2023-10-25T18:00:00",
+      "evidence": "ipdr.json:1",
+      "session_end": "2023-10-25T18:20:00"
     },
     {
-      "source": "UPI_003",
-      "target": "UPI_004",
-      "type": "TRANSFERRED",
-      "amount": 39000,
-      "timestamp": "2026-09-19 10:25:00",
-      "evidence": "transactions.csv:5"
+      "source": "PHONE_8765432109",
+      "target": "IMEI_354123456789012",
+      "type": "USES_IMEI",
+      "timestamp": "2023-10-15T14:30:00",
+      "evidence": "devices.json:2"
     },
     {
-      "source": "PHONE_001",
-      "target": "IMEI_001",
-      "type": "USES",
-      "amount": null,
-      "timestamp": "2026-09-19 10:01:00",
-      "evidence": "devices.csv:2"
+      "source": "PHONE_8765432109",
+      "target": "IMSI_404987654321098",
+      "type": "USES_IMSI",
+      "timestamp": "2023-10-15T14:30:00",
+      "evidence": "devices.json:2"
     },
     {
-      "source": "PHONE_001",
-      "target": "UPI_001",
-      "type": "LINKED_TO",
-      "amount": null,
-      "timestamp": "2026-09-19 10:02:00",
-      "evidence": "kyc.csv:4"
+      "source": "PHONE_8765432109",
+      "target": "PHONE_9999900000",
+      "type": "CALLED",
+      "timestamp": "2023-10-25T18:45:00",
+      "evidence": "cdr.json:2",
+      "duration_sec": 45,
+      "cell_tower_id": "TWR-IND-101"
     },
     {
-      "source": "PHONE_002",
-      "target": "IMEI_001",
-      "type": "USES",
-      "amount": null,
-      "timestamp": "2026-09-19 10:06:00",
-      "evidence": "devices.csv:3"
+      "source": "PHONE_8765432109",
+      "target": "IP_103.10.10.22",
+      "type": "CONNECTED_TO_IP",
+      "timestamp": "2023-10-25T18:30:00",
+      "evidence": "ipdr.json:2",
+      "session_end": "2023-10-25T18:50:00"
     },
     {
-      "source": "PHONE_002",
-      "target": "UPI_002",
-      "type": "LINKED_TO",
-      "amount": null,
-      "timestamp": "2026-09-19 10:07:00",
-      "evidence": "kyc.csv:5"
+      "source": "PHONE_9999900000",
+      "target": "IMEI_865432049876543",
+      "type": "USES_IMEI",
+      "timestamp": "2023-01-10T09:15:00",
+      "evidence": "devices.json:3"
+    },
+    {
+      "source": "PHONE_9999900000",
+      "target": "IMSI_405000000000000",
+      "type": "USES_IMSI",
+      "timestamp": "2023-01-10T09:15:00",
+      "evidence": "devices.json:3"
+    },
+    {
+      "source": "PHONE_9999900000",
+      "target": "PHONE_9876543210",
+      "type": "CALLED",
+      "timestamp": "2023-10-25T19:00:00",
+      "evidence": "cdr.json:3",
+      "duration_sec": 300,
+      "cell_tower_id": "TWR-IND-105"
+    },
+    {
+      "source": "PHONE_9999900000",
+      "target": "IP_103.10.10.21",
+      "type": "CONNECTED_TO_IP",
+      "timestamp": "2023-10-25T18:40:00",
+      "evidence": "ipdr.json:3",
+      "session_end": "2023-10-25T19:10:00"
+    },
+    {
+      "source": "UPI_fraud1@ybl",
+      "target": "UPI_victim@sbi",
+      "type": "TRANSFERRED_TO",
+      "amount": 50000.0,
+      "timestamp": "2023-10-25T18:15:22",
+      "evidence": "transactions.json:1",
+      "transaction_id": "TXN1001",
+      "status": "SUCCESS"
+    },
+    {
+      "source": "UPI_fraud2@icici",
+      "target": "UPI_victim@sbi",
+      "type": "TRANSFERRED_TO",
+      "amount": 75000.0,
+      "timestamp": "2023-10-25T18:55:10",
+      "evidence": "transactions.json:2",
+      "transaction_id": "TXN1002",
+      "status": "SUCCESS"
     }
   ]
 }

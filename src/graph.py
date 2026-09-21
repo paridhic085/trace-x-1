@@ -6,13 +6,20 @@ from pathlib import Path
 # File locations
 BASE_DIR = Path(__file__).resolve().parent.parent
 INPUT_FILE = BASE_DIR / "data" / "sample.json"
+MULTISOURCE_INPUT_FILE = BASE_DIR / "output" / "multisource_relationships.json"
 OUTPUT_DIR = BASE_DIR / "output"
 OUTPUT_FILE = OUTPUT_DIR / "graph.json"
 
 
 def load_relationships():
-    """Load relationship data from the JSON input file."""
+    """Load the original sample relationship data."""
     with open(INPUT_FILE, "r", encoding="utf-8") as file:
+        return json.load(file)
+
+
+def load_multisource_relationships():
+    """Load normalized relationships from Person 1 and 2 datasets."""
+    with open(MULTISOURCE_INPUT_FILE, "r", encoding="utf-8") as file:
         return json.load(file)
 
 
@@ -38,14 +45,17 @@ def build_graph(relationships):
             type=target.split("_")[0]
         )
 
-        # Add relationship
+        # Preserve all relationship metadata.
+        edge_attributes = {
+            key: value
+            for key, value in relation.items()
+            if key not in {"source", "target"}
+        }
+
         graph.add_edge(
             source,
             target,
-            type=relation["type"],
-            amount=relation.get("amount"),
-            timestamp=relation.get("timestamp"),
-            evidence=relation.get("evidence")
+            **edge_attributes
         )
 
     return graph
@@ -70,14 +80,15 @@ def export_graph(graph):
 
     # Export edges
     for source, target, attributes in graph.edges(data=True):
-        graph_data["edges"].append({
+        edge = {
             "source": source,
-            "target": target,
-            "type": attributes.get("type"),
-            "amount": attributes.get("amount"),
-            "timestamp": attributes.get("timestamp"),
-            "evidence": attributes.get("evidence")
-        })
+            "target": target
+        }
+
+        # Preserve every relationship field.
+        edge.update(attributes)
+
+        graph_data["edges"].append(edge)
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as file:
         json.dump(graph_data, file, indent=2)
@@ -112,8 +123,10 @@ def find_path(graph, source, target):
     except nx.NodeNotFound:
         return []
 
+
 def get_entity(graph, entity_id):
     """Return basic information about an entity."""
+
     if entity_id not in graph:
         return None
 
@@ -124,8 +137,10 @@ def get_entity(graph, entity_id):
         "type": attributes.get("type")
     }
 
+
 def get_edge_details(graph, source, target):
     """Return all relationships between two entities."""
+
     if source not in graph or target not in graph:
         return []
 
@@ -137,34 +152,27 @@ def get_edge_details(graph, source, target):
         return []
 
     for attributes in edge_data.values():
-        relationships.append({
-            "type": attributes.get("type"),
-            "amount": attributes.get("amount"),
-            "timestamp": attributes.get("timestamp"),
-            "evidence": attributes.get("evidence")
-        })
+        relationships.append(dict(attributes))
 
     return relationships
 
 
 def main():
-    relationships = load_relationships()
+    # Use the integrated multi-source data when available.
+    if MULTISOURCE_INPUT_FILE.exists():
+        relationships = load_multisource_relationships()
+        print("Using multi-source integrated relationships.")
+    else:
+        relationships = load_relationships()
+        print("Using original sample relationships.")
 
     graph = build_graph(relationships)
 
     print(f"Nodes: {graph.number_of_nodes()}")
     print(f"Relationships: {graph.number_of_edges()}")
 
-    # Example investigation
-    print("\nNeighbors of UPI_001:")
-    print(get_neighbors(graph, "UPI_001"))
-
-    print("\nPath from VICTIM_001 to UPI_003:")
-    print(find_path(graph, "VICTIM_001", "UPI_003"))
-
     export_graph(graph)
 
 
 if __name__ == "__main__":
     main()
-    
