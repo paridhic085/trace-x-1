@@ -29,4 +29,505 @@
     "imsi": "404450987654321",
     "cell_id": "CELL_BPL_002"
   }
+  ,
+  {
+    "cdr_id": "CDR004",
+    "timestamp": "2026-09-19T10:15:00",
+    "caller": "9001122334",
+    "callee": "9876543210",
+    "duration_seconds": 42,
+    "imei": "352099001761481",
+    "imsi": "404450987654321",
+    "cell_id": "CELL_BPL_002"
+  },
+  {
+    "cdr_id": "CDR005",
+    "timestamp": "2026-09-19T10:22:00",
+    "caller": "9876543210",
+    "callee": "9012345678",
+    "duration_seconds": 183,
+    "imei": "356789012345678",
+    "imsi": "404450123456789",
+    "cell_id": "CELL_BPL_001"
+  },
+  {
+    "cdr_id": "CDR006",
+    "timestamp": "2026-09-19T10:31:00",
+    "caller": "9012345678",
+    "callee": "9234567890",
+    "duration_seconds": 76,
+    "imei": "358240051111110",
+    "imsi": "404450223344556",
+    "cell_id": "CELL_BPL_003"
+  },
+  {
+    "cdr_id": "CDR007",
+    "timestamp": "2026-09-19T10:42:00",
+    "caller": "9234567890",
+    "callee": "9876543210",
+    "duration_seconds": 91,
+    "imei": "358240051111110",
+    "imsi": "404450223344556",
+    "cell_id": "CELL_BPL_003"
+  },
+  {
+    "cdr_id": "CDR008",
+    "timestamp": "2026-09-19T10:55:00",
+    "caller": "9988776655",
+    "callee": "9345678901",
+    "duration_seconds": 38,
+    "imei": "352099001761481",
+    "imsi": "404450987654321",
+    "cell_id": "CELL_BPL_002"
+  },
+  {
+    "cdr_id": "CDR009",
+    "timestamp": "2026-09-19T11:03:00",
+    "caller": "9345678901",
+    "callee": "9456789012",
+    "duration_seconds": 215,
+    "imei": "351756051234567",
+    "imsi": "404450334455667",
+    "cell_id": "CELL_BPL_004"
+  },
+  {
+    "cdr_id": "CDR010",
+    "timestamp": "2026-09-19T11:18:00",
+    "caller": "9456789012",
+    "callee": "9567890123",
+    "duration_seconds": 67,
+    "imei": "351756051234567",
+    "imsi": "404450334455667",
+    "cell_id": "CELL_BPL_004"
+  },
+  {
+    "cdr_id": "CDR011",
+    "timestamp": "2026-09-19T11:27:00",
+    "caller": "9567890123",
+    "callee": "9678901234",
+    "duration_seconds": 144,
+    "imei": "359876054321098",
+    "imsi": "404450445566778",
+    "cell_id": "CELL_BPL_005"
+  },
+  {
+    "cdr_id": "CDR012",
+    "timestamp": "2026-09-19T11:35:00",
+    "caller": "9678901234",
+    "callee": "9789012345",
+    "duration_seconds": 53,
+    "imei": "359876054321098",
+    "imsi": "404450445566778",
+    "cell_id": "CELL_BPL_005"
+  },
+  {
+    "cdr_id": "CDR013",
+    "timestamp": "2026-09-19T11:44:00",
+    "caller": "9789012345",
+    "callee": "9890123456",
+    "duration_seconds": 109,
+    "imei": "357812349876543",
+    "imsi": "404450556677889",
+    "cell_id": "CELL_BPL_006"
+  },
+  {
+    "cdr_id": "CDR014",
+    "timestamp": "2026-09-19T11:58:00",
+    "caller": "9890123456",
+    "callee": "9001122334",
+    "duration_seconds": 82,
+    "imei": "357812349876543",
+    "imsi": "404450556677889",
+    "cell_id": "CELL_BPL_006"
+  },
+  {
+    "cdr_id": "CDR015",
+    "timestamp": "2026-09-19T12:05:00",
+    "caller": "9876543210",
+    "callee": "9123456780",
+    "duration_seconds": 36,
+    "imei": "356789012345678",
+    "imsi": "404450123456789",
+    "cell_id": "CELL_BPL_001"
+  },
+  {
+    "cdr_id": "CDR016",
+    "timestamp": "2026-09-19T12:12:00",
+    "caller": "9123456780",
+    "callee": "9234567890",
+    "duration_seconds": 156,
+    "imei": "356789012345678",
+    "imsi": "404450123456789",
+    "cell_id": "CELL_BPL_001"
+  },
+  {
+    "cdr_id": "CDR017",
+    "timestamp": "2026-09-19T12:20:00",
+    "caller": "9234567890",
+    "callee": "9345678901",
+    "duration_seconds": 74,
+    "imei": "358240051111110",
+    "imsi": "404450223344556",
+    "cell_id": "CELL_BPL_003"
+  },
+  {
+    "cdr_id": "CDR018",
+    "timestamp": "2026-09-19T12:34:00",
+    "caller": "9345678901",
+    "callee": "9456789012",
+    "duration_seconds": 48,
+    "imei": "351756051234567",
+    "imsi": "404450334455667",
+    "cell_id": "CELL_BPL_004"
+  },
+  {
+    "cdr_id": "CDR019",
+    "timestamp": "2026-09-19T12:41:00",
+    "caller": "9456789012",
+    "callee": "9876543210",
+    "duration_seconds": 201,
+    "imei": "351756051234567",
+    "imsi": "404450334455667",
+    "cell_id": "CELL_BPL_004"
+  },
+  {
+    "cdr_id": "CDR020",
+    "timestamp": "2026-09-19T12:53:00",
+    "caller": "9988776655",
+    "callee": "9567890123",
+    "duration_seconds": 63,
+    "imei": "352099001761481",
+    "imsi": "404450987654321",
+    "cell_id": "CELL_BPL_002"
+  },
+  {
+    "cdr_id": "CDR021",
+    "timestamp": "2026-09-19T13:02:00",
+    "caller": "9567890123",
+    "callee": "9678901234",
+    "duration_seconds": 117,
+    "imei": "359876054321098",
+    "imsi": "404450445566778",
+    "cell_id": "CELL_BPL_005"
+  },
+  {
+    "cdr_id": "CDR022",
+    "timestamp": "2026-09-19T13:15:00",
+    "caller": "9678901234",
+    "callee": "9789012345",
+    "duration_seconds": 89,
+    "imei": "359876054321098",
+    "imsi": "404450445566778",
+    "cell_id": "CELL_BPL_005"
+  },
+  {
+    "cdr_id": "CDR023",
+    "timestamp": "2026-09-19T13:23:00",
+    "caller": "9789012345",
+    "callee": "9890123456",
+    "duration_seconds": 132,
+    "imei": "357812349876543",
+    "imsi": "404450556677889",
+    "cell_id": "CELL_BPL_006"
+  },
+  {
+    "cdr_id": "CDR024",
+    "timestamp": "2026-09-19T13:37:00",
+    "caller": "9890123456",
+    "callee": "9012345678",
+    "duration_seconds": 55,
+    "imei": "357812349876543",
+    "imsi": "404450556677889",
+    "cell_id": "CELL_BPL_006"
+  },
+  {
+    "cdr_id": "CDR025",
+    "timestamp": "2026-09-19T13:49:00",
+    "caller": "9012345678",
+    "callee": "9123456780",
+    "duration_seconds": 94,
+    "imei": "358240051111110",
+    "imsi": "404450223344556",
+    "cell_id": "CELL_BPL_003"
+  },
+  {
+    "cdr_id": "CDR026",
+    "timestamp": "2026-09-19T14:01:00",
+    "caller": "9123456780",
+    "callee": "9345678901",
+    "duration_seconds": 71,
+    "imei": "356789012345678",
+    "imsi": "404450123456789",
+    "cell_id": "CELL_BPL_001"
+  },
+  {
+    "cdr_id": "CDR027",
+    "timestamp": "2026-09-19T14:16:00",
+    "caller": "9345678901",
+    "callee": "9567890123",
+    "duration_seconds": 168,
+    "imei": "351756051234567",
+    "imsi": "404450334455667",
+    "cell_id": "CELL_BPL_004"
+  },
+  {
+    "cdr_id": "CDR028",
+    "timestamp": "2026-09-19T14:29:00",
+    "caller": "9567890123",
+    "callee": "9789012345",
+    "duration_seconds": 43,
+    "imei": "359876054321098",
+    "imsi": "404450445566778",
+    "cell_id": "CELL_BPL_005"
+  },
+  {
+    "cdr_id": "CDR029",
+    "timestamp": "2026-09-19T14:38:00",
+    "caller": "9789012345",
+    "callee": "9001122334",
+    "duration_seconds": 97,
+    "imei": "357812349876543",
+    "imsi": "404450556677889",
+    "cell_id": "CELL_BPL_006"
+  },
+  {
+    "cdr_id": "CDR030",
+    "timestamp": "2026-09-19T14:52:00",
+    "caller": "9001122334",
+    "callee": "9876543210",
+    "duration_seconds": 61,
+    "imei": "352099001761481",
+    "imsi": "404450987654321",
+    "cell_id": "CELL_BPL_002"
+  },
+  {
+    "cdr_id": "CDR031",
+    "timestamp": "2026-09-19T15:04:00",
+    "caller": "9876543210",
+    "callee": "9988776655",
+    "duration_seconds": 128,
+    "imei": "356789012345678",
+    "imsi": "404450123456789",
+    "cell_id": "CELL_BPL_001"
+  },
+  {
+    "cdr_id": "CDR032",
+    "timestamp": "2026-09-19T15:18:00",
+    "caller": "9988776655",
+    "callee": "9123456780",
+    "duration_seconds": 52,
+    "imei": "352099001761481",
+    "imsi": "404450987654321",
+    "cell_id": "CELL_BPL_002"
+  },
+  {
+    "cdr_id": "CDR033",
+    "timestamp": "2026-09-19T15:26:00",
+    "caller": "9123456780",
+    "callee": "9678901234",
+    "duration_seconds": 83,
+    "imei": "356789012345678",
+    "imsi": "404450123456789",
+    "cell_id": "CELL_BPL_001"
+  },
+  {
+    "cdr_id": "CDR034",
+    "timestamp": "2026-09-19T15:41:00",
+    "caller": "9678901234",
+    "callee": "9456789012",
+    "duration_seconds": 146,
+    "imei": "359876054321098",
+    "imsi": "404450445566778",
+    "cell_id": "CELL_BPL_005"
+  },
+  {
+    "cdr_id": "CDR035",
+    "timestamp": "2026-09-19T15:53:00",
+    "caller": "9456789012",
+    "callee": "9234567890",
+    "duration_seconds": 39,
+    "imei": "351756051234567",
+    "imsi": "404450334455667",
+    "cell_id": "CELL_BPL_004"
+  },
+  {
+    "cdr_id": "CDR036",
+    "timestamp": "2026-09-19T16:08:00",
+    "caller": "9234567890",
+    "callee": "9890123456",
+    "duration_seconds": 112,
+    "imei": "358240051111110",
+    "imsi": "404450223344556",
+    "cell_id": "CELL_BPL_003"
+  },
+  {
+    "cdr_id": "CDR037",
+    "timestamp": "2026-09-19T16:17:00",
+    "caller": "9890123456",
+    "callee": "9567890123",
+    "duration_seconds": 72,
+    "imei": "357812349876543",
+    "imsi": "404450556677889",
+    "cell_id": "CELL_BPL_006"
+  },
+  {
+    "cdr_id": "CDR038",
+    "timestamp": "2026-09-19T16:31:00",
+    "caller": "9567890123",
+    "callee": "9012345678",
+    "duration_seconds": 185,
+    "imei": "359876054321098",
+    "imsi": "404450445566778",
+    "cell_id": "CELL_BPL_005"
+  },
+  {
+    "cdr_id": "CDR039",
+    "timestamp": "2026-09-19T16:44:00",
+    "caller": "9012345678",
+    "callee": "9789012345",
+    "duration_seconds": 47,
+    "imei": "358240051111110",
+    "imsi": "404450223344556",
+    "cell_id": "CELL_BPL_003"
+  },
+  {
+    "cdr_id": "CDR040",
+    "timestamp": "2026-09-19T16:58:00",
+    "caller": "9789012345",
+    "callee": "9123456780",
+    "duration_seconds": 126,
+    "imei": "357812349876543",
+    "imsi": "404450556677889",
+    "cell_id": "CELL_BPL_006"
+  },
+  {
+    "cdr_id": "CDR041",
+    "timestamp": "2026-09-19T17:11:00",
+    "caller": "9123456780",
+    "callee": "9001122334",
+    "duration_seconds": 58,
+    "imei": "356789012345678",
+    "imsi": "404450123456789",
+    "cell_id": "CELL_BPL_001"
+  },
+  {
+    "cdr_id": "CDR042",
+    "timestamp": "2026-09-19T17:25:00",
+    "caller": "9001122334",
+    "callee": "9345678901",
+    "duration_seconds": 102,
+    "imei": "352099001761481",
+    "imsi": "404450987654321",
+    "cell_id": "CELL_BPL_002"
+  },
+  {
+    "cdr_id": "CDR043",
+    "timestamp": "2026-09-19T17:39:00",
+    "caller": "9345678901",
+    "callee": "9876543210",
+    "duration_seconds": 63,
+    "imei": "351756051234567",
+    "imsi": "404450334455667",
+    "cell_id": "CELL_BPL_004"
+  },
+  {
+    "cdr_id": "CDR044",
+    "timestamp": "2026-09-19T17:52:00",
+    "caller": "9876543210",
+    "callee": "9678901234",
+    "duration_seconds": 139,
+    "imei": "356789012345678",
+    "imsi": "404450123456789",
+    "cell_id": "CELL_BPL_001"
+  },
+  {
+    "cdr_id": "CDR045",
+    "timestamp": "2026-09-19T18:06:00",
+    "caller": "9678901234",
+    "callee": "9988776655",
+    "duration_seconds": 44,
+    "imei": "359876054321098",
+    "imsi": "404450445566778",
+    "cell_id": "CELL_BPL_005"
+  },
+  {
+    "cdr_id": "CDR046",
+    "timestamp": "2026-09-19T18:19:00",
+    "caller": "9988776655",
+    "callee": "9890123456",
+    "duration_seconds": 88,
+    "imei": "352099001761481",
+    "imsi": "404450987654321",
+    "cell_id": "CELL_BPL_002"
+  },
+  {
+    "cdr_id": "CDR047",
+    "timestamp": "2026-09-19T18:34:00",
+    "caller": "9890123456",
+    "callee": "9234567890",
+    "duration_seconds": 171,
+    "imei": "357812349876543",
+    "imsi": "404450556677889",
+    "cell_id": "CELL_BPL_006"
+  },
+  {
+    "cdr_id": "CDR048",
+    "timestamp": "2026-09-19T18:48:00",
+    "caller": "9234567890",
+    "callee": "9456789012",
+    "duration_seconds": 57,
+    "imei": "358240051111110",
+    "imsi": "404450223344556",
+    "cell_id": "CELL_BPL_003"
+  },
+  {
+    "cdr_id": "CDR049",
+    "timestamp": "2026-09-19T19:03:00",
+    "caller": "9456789012",
+    "callee": "9567890123",
+    "duration_seconds": 118,
+    "imei": "351756051234567",
+    "imsi": "404450334455667",
+    "cell_id": "CELL_BPL_004"
+  },
+  {
+    "cdr_id": "CDR050",
+    "timestamp": "2026-09-19T19:17:00",
+    "caller": "9567890123",
+    "callee": "9789012345",
+    "duration_seconds": 69,
+    "imei": "359876054321098",
+    "imsi": "404450445566778",
+    "cell_id": "CELL_BPL_005"
+  },
+  {
+    "cdr_id": "CDR051",
+    "timestamp": "2026-09-19T19:31:00",
+    "caller": "9789012345",
+    "callee": "9001122334",
+    "duration_seconds": 154,
+    "imei": "357812349876543",
+    "imsi": "404450556677889",
+    "cell_id": "CELL_BPL_006"
+  },
+  {
+    "cdr_id": "CDR052",
+    "timestamp": "2026-09-19T19:45:00",
+    "caller": "9001122334",
+    "callee": "9123456780",
+    "duration_seconds": 81,
+    "imei": "352099001761481",
+    "imsi": "404450987654321",
+    "cell_id": "CELL_BPL_002"
+  },
+  {
+    "cdr_id": "CDR053",
+    "timestamp": "2026-09-19T20:02:00",
+    "caller": "9123456780",
+    "callee": "9876543210",
+    "duration_seconds": 133,
+    "imei": "356789012345678",
+    "imsi": "404450123456789",
+    "cell_id": "CELL_BPL_001"
+  }
 ]
